@@ -1,5 +1,7 @@
 import "./Home.css";
 import Car from "../../assets/car.jpg"
+import { Link } from 'react-router-dom';
+
 const Home = () => {
     return ( 
         <main>
@@ -13,7 +15,17 @@ const Home = () => {
                 <img src={Car} alt="vehicle" />
             </div>
             <div className="log-links">
-
+                <div className="links">
+                    <div className="link login">
+                        <Link to="/login">LOG IN</Link>
+                    </div>
+                    <div className="link register">
+                        <Link to="/register">REGISTER</Link>
+                    </div>
+                </div>
+                <div className="aboutLink">
+                    <Link to="/about">Learn more About Us...</Link>
+                </div>
             </div>
         </main>
     );
