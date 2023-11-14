@@ -6,7 +6,7 @@ const Home = () => {
     return ( 
         <main>
             <div className="texts">
-                <h1>Fitter</h1>
+                <h1>FITTER</h1>
 
                 <h3>WELCOME</h3>
                 <p>Let's Get Started</p>

@@ -12,13 +12,13 @@ const About = () => {
             </div>
 
             <header>
-                <h1>About Us</h1>
+                <h1 id="fitter">About Us</h1>
                 <img src={AboutIMG} alt="about" loading="eager"/>
             </header>
 
             <article>
                 <h1>Elevate Your Mechanical Experience With FITTER</h1>
-                <p>This revolutionary application is designed to redefine how you navigate mechanical challenges. At FITTER, we are dedicated to providing a seamless and efficient platform that ensures convenient access to professional assistance and simplifies the process of locating nearby mechanical shops. With a sleek design and an array of features, FITTER is here to transform your experience of dealing with unexpected car troubles.</p>
+                <p>This revolutionary application is designed to redefine how you navigate mechanical challenges. At <span id="fitter">FITTER</span>, we are dedicated to providing a seamless and efficient platform that ensures convenient access to professional assistance and simplifies the process of locating nearby mechanical shops. With a sleek design and an array of features, <span id="fitter">FITTER</span> is here to transform your experience of dealing with unexpected car troubles.</p>
             </article>
 
             <div id="services">
@@ -39,10 +39,10 @@ const About = () => {
 
             <div id="mission">
                 <h1 className="title">Our Mission</h1>
-                <p>At the core of FITTER is a mission to provide 24/7 reliable solutions, ensuring you can address mechanical issues with ease, regardless of your location or the urgency of the situation. Our application's intuitive interface and comprehensive functionalities are crafted to deliver prompt assistance and a stress-free resolution to your mechanical problems.</p>
+                <p>At the core of <span id="fitter">FITTER</span> is a mission to provide 24/7 reliable solutions, ensuring you can address mechanical issues with ease, regardless of your location or the urgency of the situation. Our application's intuitive interface and comprehensive functionalities are crafted to deliver prompt assistance and a stress-free resolution to your mechanical problems.</p>
             </div>
 
-            <div id="contacts">
+            <div id="subscribe">
 
             </div>
 
