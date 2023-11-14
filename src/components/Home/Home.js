@@ -12,7 +12,7 @@ const Home = () => {
                 <p>Let's Get Started</p>
             </div>
             <div className="carImage-container">
-                <img src={Car} alt="vehicle" />
+                <img src={Car} alt="vehicle" loading="eager"/>
             </div>
             <div className="log-links">
                 <div className="links">
@@ -24,7 +24,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="aboutLink">
-                    <Link to="/about">Learn more About Us...</Link>
+                    <Link to="/about"><i className='bx bx-link' ></i>Learn About Us...</Link>
                 </div>
             </div>
         </main>
