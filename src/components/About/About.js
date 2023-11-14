@@ -15,7 +15,8 @@ const About = () => {
             </header>
 
             <article>
-                <h1>Elevate Your Mechanical Experience with FITTER</h1>
+                <h1>Elevate Your Mechanical Experience With FITTER</h1>
+                <p>This revolutionary application is designed to redefine how you navigate mechanical challenges. At FITTER, we are dedicated to providing a seamless and efficient platform that ensures convenient access to professional assistance and simplifies the process of locating nearby mechanical shops. With a sleek design and an array of features, FITTER is here to transform your experience of dealing with unexpected car troubles.</p>
             </article>
 
         </section>
