@@ -19,6 +19,10 @@ const About = () => {
                 <p>This revolutionary application is designed to redefine how you navigate mechanical challenges. At FITTER, we are dedicated to providing a seamless and efficient platform that ensures convenient access to professional assistance and simplifies the process of locating nearby mechanical shops. With a sleek design and an array of features, FITTER is here to transform your experience of dealing with unexpected car troubles.</p>
             </article>
 
+            <div id="services">
+                
+            </div>
+
         </section>
     );
 }
