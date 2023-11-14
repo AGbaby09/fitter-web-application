@@ -1,4 +1,9 @@
-
+section#login{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: var(--yelBG);
+}
 /* mobile view styling */
 @media only screen and (max-width: 550px) {
 	/* ...your css here and you're good to go! */

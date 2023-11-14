@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
     return ( 
-        <section>
+        <section id="about">
             <div id="nav-button">
                 <Link to="/"><i className='bx bx-home-alt'></i></Link>
             </div>

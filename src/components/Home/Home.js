@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return ( 
-        <main>
+        <main id="home">
             <div className="texts">
                 <h1>FITTER</h1>
 
