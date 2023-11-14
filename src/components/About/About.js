@@ -1,5 +1,7 @@
 import "./About.css";
-import AboutIMG from "../../assets/about.jpg"
+import AboutIMG from "../../assets/about.jpg";
+import AssistIMG from "../../assets/request-workshop 1.png";
+import LocationIMG from "../../assets/mechanics_roadside_assistance 1.png";
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -20,7 +22,28 @@ const About = () => {
             </article>
 
             <div id="services">
-                
+                <h1 className="title">Our Services</h1>
+                <div className="assistance tab">
+                    <div className="img">
+                        <img src={AssistIMG} alt="assistance" />
+                    </div>
+                    <p>You can submit request for professional mechanical assistance through the app. When you make the request, your location is identified and professionals are sent your way.</p>
+                </div>
+                <div className="location tab">
+                    <div className="img">
+                        <img src={LocationIMG} alt="location" />
+                    </div>
+                    <p>With the aid of geolocation, you can find nearby mechanical shops and select preferred shop. You are then guided with directions to selected shop.</p>
+                </div>
+            </div>
+
+            <div id="mission">
+                <h1 className="title">Our Mission</h1>
+                <p>At the core of FITTER is a mission to provide 24/7 reliable solutions, ensuring you can address mechanical issues with ease, regardless of your location or the urgency of the situation. Our application's intuitive interface and comprehensive functionalities are crafted to deliver prompt assistance and a stress-free resolution to your mechanical problems.</p>
+            </div>
+
+            <div id="contacts">
+
             </div>
 
         </section>
