@@ -8,6 +8,13 @@ section#login{
 /* mobile view styling */
 @media only screen and (max-width: 550px) {
 	/* ...your css here and you're good to go! */
+	section#login>#back-button{
+		position: absolute;
+		top: 2vh;
+		left: 2vh;
+		font-size: 4vh;
+		z-index: 5;
+	}
 	section#login>form{
 		position: absolute;
 		width: 100%;

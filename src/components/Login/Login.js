@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 const Login = () => {
     return ( 
         <section id="login">
+            <div id="back-button">
+                <Link to="/"><i className='bx bx-chevron-left' ></i></Link>
+            </div>
             <form action="" method="post">
 
                 <div className="form-title">

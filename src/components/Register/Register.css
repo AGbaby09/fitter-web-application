@@ -7,6 +7,13 @@ section#register{
 /* mobile view styling */
 @media only screen and (max-width: 550px) {
 	/* ...your css here and you're good to go! */
+	section#register>#back-button{
+		position: absolute;
+		top: 2vh;
+		left: 2vh;
+		font-size: 4vh;
+		z-index: 5;
+	}
 	section#register>form{
 		position: absolute;
 		width: 100%;
