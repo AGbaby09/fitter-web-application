@@ -1,7 +1,7 @@
 import "./Options.css";
 const Options = () => {
     return ( 
-        <section>
+        <section id="options">
 
         </section>
     );

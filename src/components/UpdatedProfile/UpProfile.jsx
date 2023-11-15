@@ -1,7 +1,7 @@
 import "./UpProfile.css";
 const UpProfile = () => {
     return ( 
-        <section>
+        <section id="profileUpdate">
 
         </section>
     );

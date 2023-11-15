@@ -1,7 +1,7 @@
 import "./UserLoc.css";
 const UserLoc = () => {
     return ( 
-        <section>
+        <section id="userLocation">
 
         </section>
     );

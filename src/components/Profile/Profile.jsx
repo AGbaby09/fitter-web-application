@@ -1,7 +1,7 @@
 import "./Profile.css";
 const Profile = () => {
     return ( 
-        <section>
+        <section id="profile">
 
         </section>
     );

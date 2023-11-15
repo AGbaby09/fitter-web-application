@@ -1,7 +1,15 @@
 import "./Register.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
+
+    const navigate = useNavigate();
+
+    const redirect = (e) => {
+        e.preventDefault();
+        navigate("/login");
+    }
+
     return ( 
         <section id="register">
             <div id="back-button">
@@ -19,7 +27,7 @@ const Register = () => {
                     <input type="password" name="password" id="password" placeholder="Password"/>
                 </div>
 
-                <button>Register</button>
+                <button type="submit" onClick={redirect}>Register</button> {/* change the onclick function for backend */}
 
                 <div id="toLogin">
                     <p>Already have an account?</p>

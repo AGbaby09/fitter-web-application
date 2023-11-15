@@ -1,7 +1,15 @@
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
+    const redirect = (e) => {
+        e.preventDefault();
+        navigate("/user");
+    }
+
     return ( 
         <section id="login">
             <div id="back-button">
@@ -19,7 +27,7 @@ const Login = () => {
                         User
                     </label>
                     <label>
-                        <input type="radio" name="user" id="mechanic" value="user"/>
+                        <input type="radio" name="mechanic" id="mechanic" value="mechanic"/>
                         Mechanic
                     </label>
                 </div>
@@ -32,8 +40,8 @@ const Login = () => {
                 <div className="forgot">
                     <Link to="/forgot">Forgot Password?</Link>
                 </div>
-
-                <button>LOG IN</button>
+                
+                <button type="submit" onClick={redirect}>LOG IN</button> {/* change the onclick function for backend */}
 
                 <div id="toRegister">
                     <p>Don't have an account?</p>
