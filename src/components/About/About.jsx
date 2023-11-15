@@ -23,13 +23,13 @@ const About = () => {
 
             <div id="services">
                 <h1 className="title">Our Services</h1>
-                <div className="assistance tab">
+                <div className="tab">
                     <div className="img">
                         <img src={AssistIMG} alt="assistance" />
                     </div>
                     <p>You can submit request for professional mechanical assistance through the app. When you make the request, your location is identified and professionals are sent your way.</p>
                 </div>
-                <div className="location tab">
+                <div className="tab">
                     <div className="img">
                         <img src={LocationIMG} alt="location" />
                     </div>

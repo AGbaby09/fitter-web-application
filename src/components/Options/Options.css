@@ -1,4 +1,6 @@
-
+h1, p{
+	font-family: "Poppins", sans-serif;
+}
 /* mobile view styling */
 @media only screen and (max-width: 550px) {
 	/* ...your css here and you're good to go! */
@@ -6,6 +8,27 @@
 		position: relative;
 		width: 100vw;
 		height: calc(100vh - 7.5vh);
-		background-color: teal;
+		/* background-color: teal; */
 	}
+
+	section#options>h1{
+		position: absolute;
+		top: 5%;
+		font-size: 2.5vh;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	section#options>.select{
+		box-shadow: 0 0 2px 1px #aaa;
+		position: absolute;
+		width: 90%;
+		height: 35vh;
+		margin: 0 5%;
+		border-radius: 1vh;
+	}
+	section#options>.select-assistance{top: 14%;}
+	section#options>.select-location{top: 57.5%;}
 }
