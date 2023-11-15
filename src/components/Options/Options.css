@@ -22,13 +22,39 @@ h1, p{
 	}
 
 	section#options>.select{
-		box-shadow: 0 0 2px 1px #aaa;
 		position: absolute;
+		box-shadow: 0 0 2px 1px #aaa;
 		width: 90%;
-		height: 35vh;
+		height: 30vh;
 		margin: 0 5%;
 		border-radius: 1vh;
 	}
 	section#options>.select-assistance{top: 14%;}
-	section#options>.select-location{top: 57.5%;}
+	section#options>.select-location{top: 55%;}
+	section#options>.select>.image{
+		position: relative;
+		width: 100%;
+		height: 70%;
+	}
+	section#options>.select>.image>img{
+		position: relative;
+		height: 90%;
+		width: 80%;
+		margin: auto 10%;
+		object-fit: contain;
+		object-position: center;
+		/* margin: auto; */
+		/* border: 1px solid red; */
+	}
+	section#options>.select>button{
+		height: 20%;
+		width: 70%;
+		margin: 0 15%;
+		background-color: var(--yelBG);
+		border: none;
+		font-family:"Poppins", sans-serif;
+		font-size: 1.8vh;
+		font-weight: 600;
+		border-radius: 1vh;
+	}
 }
