@@ -21,6 +21,10 @@ const Navbar = () => {
         navigate("/user/location");
         setIsOpen(false);
     }
+    const logout = () => {
+        navigate("/login");
+        setIsOpen(false);
+    }
 
     return ( 
         <header id="navbar"  onBlur={closeMenu}>
@@ -42,6 +46,9 @@ const Navbar = () => {
                     </div>
                     <div className="link">
                         <button onClick={location}><i className='large material-icons' >location_on</i>Find Nearby Shop</button>
+                    </div>
+                    <div className="link">
+                        <button onClick={logout}><i className='bx bx-exit' ></i>Logout</button>
                     </div>
                 </div>
             </div>
