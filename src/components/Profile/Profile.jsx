@@ -17,9 +17,9 @@ const Profile = () => {
             <h1>Profile</h1>
 
             <form action="" method="post">
-                <label>Name<input type="text" placeholder="Full Name"/></label>
-                <label>Email<input type="email" placeholder="example@exam.com"/></label>
-                <label>Mobile<input type="number" placeholder="+1 (234) 456 7890"/></label>
+                <label>Name<p>Full Name</p></label>
+                <label>Email<p>example@exam.com</p></label>
+                <label>Mobile<p>+1 (234) 456 7890</p></label>
             </form>
 
             <h2>Notifictaions</h2>
@@ -30,7 +30,7 @@ const Profile = () => {
                 </button>
             </div>
 
-            <Link to="/user/profile/update">Edit Profile</Link>
+            <button><Link to="/user/profile/update">Edit Profile</Link></button>
         </section>
     );
 }

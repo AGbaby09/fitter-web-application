@@ -21,39 +21,36 @@
 		height: auto;
 		margin-top: 5vh;
 		display:grid;
-		font-size: 2vh;
 	}
 	section#profile>form>label{
+		font-size: 1.8vh;
 		display: grid;
 		width: 75%;
 		margin: 0 12.5%;
 		font-weight: 550;
 	}
-	section#profile>form>label>input{
-		font-family: "Poppins", sans-serif;
-		font-size: 1.8vh;
+	section#profile>form>label>p{
+		font-size: 1.7vh;
+		font-weight: 300;
 		display: flex;
+		align-items: center;
 		height: 6vh;
 		border: none;
 		border-bottom: 1px solid silver;
 		margin-bottom: 3vh;
-	}
-	section#profile>form>label>input::placeholder{
 		color: silver;
-	}
-	section#profile>form>label>input:focus{
-		outline: none;
 	}
 
 	section#profile>h2{
-		font-size: 2.3vh;
+		font-size: 2vh;
 		width: 75%;
-		margin: 9% 12.5% 5%;
+		margin: 5% 12.5% 3%;
 	}
 	section#profile>.notif{
+		position: relative;
 		background-color: rgba(192, 192, 192, 0.309);
 		width: 100%;
-		height: 10%;
+		height: 8%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -65,28 +62,43 @@
 	}
 	section#profile>.notif>button{
 		position: relative;
-		width: 10vh;
-		height: 5vh;
+		display: flex;
+		align-items: center;
+		width: 20%;
+		height: 50%;
 		border: none;
 		border-radius: 50px;
 		box-shadow: 0 0 2px 1px #aaa;
 	}
 	section#profile>.notif>button>.circle{
-		position: absolute;
-		top: 0;
+		position: relative;
 		width: 50%;
-		height: 95%;
+		height: 90%;
 		border-radius: 50%;
-		margin: 1.6% 2px;
 		transition: 0.1s linear;
 	}
 	.notif-close{
 		background-color: silver;
-		left: 0;
+		left: 2.5%;
 	}
 	.notif-open{
 		background-color: var(--yelBG);
-		right: 0;	
+		left: 45%;	
 	}
-
+	
+	section#profile>button{
+		position: relative;
+		color: white;
+		background-color: var(--yelBG);
+		border: none;
+		border-radius: 1vh;
+		width:40%;
+		height: 5.5%;
+		margin: 10% 30%;
+	}
+	section#profile>button>a{
+		color: white;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.8vh;
+	}
 }

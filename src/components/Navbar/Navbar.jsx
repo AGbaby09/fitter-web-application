@@ -23,11 +23,11 @@ const Navbar = () => {
     }
 
     return ( 
-        <header id="navbar">
+        <header id="navbar"  onBlur={closeMenu}>
             <button id="menu" onClick={openMenu}>
                 <i className='bx bx-menu'></i>
             </button>
-            <div id="links" className={isOpen ? "link-open" : "link-close"} onBlur={closeMenu}>
+            <div id="links" className={isOpen ? "link-open" : "link-close"}>
                 <div id="links-nav">
                     <button id="close" onClick={closeMenu}>
                         <i className='bx bx-x' ></i>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
                 <div className="links">
                     <div className="link">
-                        <button onClick={profile}><i className='bx bxs-user' ></i>Profile</button>
+                        <button onClick={profile}><i className='bx bxs-user' ></i>Your profile</button>
                     </div>
                     <div className="link">
                         <button onClick={request}><i className='bx bxs-car-mechanic'></i>Request Assistance</button>
