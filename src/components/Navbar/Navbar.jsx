@@ -4,22 +4,22 @@ import { useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
-    const [Open, setOpen] = useState(false);
-    const openMenu = () => setOpen(true);
-    const closeMenu = () => setOpen(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const openMenu = () => setIsOpen(true);
+    const closeMenu = () => setIsOpen(false);
 
     const navigate = useNavigate();
     const profile = () => {
         navigate("/user/profile");
-        setOpen(false);
+        setIsOpen(false);
     }
     const request = () => {
         navigate("/user/request");
-        setOpen(false);
+        setIsOpen(false);
     }
     const location = () => {
         navigate("/user/location");
-        setOpen(false);
+        setIsOpen(false);
     }
 
     return ( 
@@ -27,7 +27,7 @@ const Navbar = () => {
             <button id="menu" onClick={openMenu}>
                 <i className='bx bx-menu'></i>
             </button>
-            <div id="links" className={Open ? "link-open" : "link-close"} onBlur={closeMenu}>
+            <div id="links" className={isOpen ? "link-open" : "link-close"} onBlur={closeMenu}>
                 <div id="links-nav">
                     <button id="close" onClick={closeMenu}>
                         <i className='bx bx-x' ></i>
