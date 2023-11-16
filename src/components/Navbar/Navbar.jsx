@@ -13,8 +13,8 @@ const Navbar = () => {
         navigate("/user/profile");
         setOpen(false);
     }
-    const profileUpdate = () => {
-        navigate("/user/profile/update");
+    const request = () => {
+        navigate("/user/request");
         setOpen(false);
     }
     const location = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
             <button id="menu" onClick={openMenu}>
                 <i className='bx bx-menu'></i>
             </button>
-            <div id="links" className={Open ? "link-open" : "link-close"}>
+            <div id="links" className={Open ? "link-open" : "link-close"} onBlur={closeMenu}>
                 <div id="links-nav">
                     <button id="close" onClick={closeMenu}>
                         <i className='bx bx-x' ></i>
@@ -38,7 +38,7 @@ const Navbar = () => {
                         <button onClick={profile}><i className='bx bxs-user' ></i>Profile</button>
                     </div>
                     <div className="link">
-                        <button onClick={profileUpdate}><i className='bx bxs-car-mechanic'></i>Request Assistance</button>
+                        <button onClick={request}><i className='bx bxs-car-mechanic'></i>Request Assistance</button>
                     </div>
                     <div className="link">
                         <button onClick={location}><i className='large material-icons' >location_on</i>Find Nearby Shop</button>

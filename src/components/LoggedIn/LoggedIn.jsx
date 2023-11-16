@@ -2,9 +2,9 @@ import "./LoggedIn.css";
 import Navbar from '../Navbar/Navbar';
 import Options from '../Options/Options';
 import Profile from '../Profile/Profile';
-import UpProfile from '../UpdatedProfile/UpProfile';
-import UserLoc from '../UserLocation/UserLoc';
+import Request from "../Request/Request";
 import { Routes, Route } from 'react-router-dom';
+import Shops from "../Shops/Shops";
 
 const LoggedIn = () => {
     return ( 
@@ -13,8 +13,8 @@ const LoggedIn = () => {
             <Routes>
                 <Route path="/" element={<Options />}/>
                 <Route path="/profile" element={<Profile />}/>
-                <Route path="/profile/update" element={<UpProfile />}/>
-                <Route path="/location" element={<UserLoc />}/>
+                <Route path="/request" element={<Request />}/>
+                <Route path="/location" element={<Shops />}/>
             </Routes>
         </section>
     );
