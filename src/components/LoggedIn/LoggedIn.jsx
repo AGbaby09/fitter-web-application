@@ -2,9 +2,9 @@ import "./LoggedIn.css";
 import Navbar from '../Navbar/Navbar';
 import Options from '../Options/Options';
 import Profile from '../Profile/Profile';
+import Shops from "../Shops/Shops";
 import Request from "../Request/Request";
 import { Routes, Route } from 'react-router-dom';
-import Shops from "../Shops/Shops";
 
 const LoggedIn = () => {
     return ( 
